@@ -40,5 +40,10 @@
     <mapRef name="urn:mace:dir:attribute-def:eduPersonTargetedID" />
     <mapRef name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation-member" />
     <mapRef name="urn:mace:dir:attribute-def:eduPersonScopedAffiliation-staff" />
+		<!-- Sakai attributes -->
+		<mapRef name="sakaiUserID-mapping" />
+		<mapRef name="sakaiFirstName-mapping" />
+		<mapRef name="sakaiLastName-mapping" />
+		<mapRef name="sakaiMail-mapping" />
   </provider>
 </AttributeMap>
