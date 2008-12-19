@@ -175,6 +175,13 @@
 	<!-- **************************************************************************** -->
 	<!-- Servlet mappings -->
 	
+	<!-- Sakai shibb portal mapping. By only handling portal-shibb/gx, the rest of the ecosystem
+       can be accessed freely, i.e. portal-shibb/SSO, portal-shibb/AA etc. -->
+  <servlet-mapping>
+		<servlet-name>sakai.portal.shibb</servlet-name>
+		<url-pattern>/gx/*</url-pattern>
+  </servlet-mapping>
+	
 	<!-- Core Engine endpoints -->
   <servlet-mapping>
     <servlet-name>Guanxi Service Provider Engine</servlet-name>
