@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>gsk-holder</artifactId>
+    <groupId>gsk</groupId>
+    <version>M2</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+	<name>Guanxi Shibboleth Portal</name>
+	<groupId>org.guanxi</groupId>
+	<artifactId>portal-shibb</artifactId>
+	<version>1.0</version>
+	<organization>
+		<name>UHI Millennium Institute</name>
+		<url>http://www.weblogs.uhi.ac.uk/sm00ay</url>
+	</organization>
+	<inceptionYear>2006</inceptionYear>
+	<packaging>war</packaging>
+
+	<dependencies>
+    <dependency>
+      <groupId>org.guanxi</groupId>
+      <artifactId>sakai-guanxi-gskpod-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.guanxi</groupId>
+      <artifactId>sakai-guanxi-pod-manager-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-component</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+	    <groupId>org.sakaiproject</groupId>
+	    <artifactId>sakai-authz-api</artifactId>
+	    <scope>provided</scope>
+	  </dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-util-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+	    <groupId>org.sakaiproject</groupId>
+	    <artifactId>sakai-event-api</artifactId>
+	    <scope>provided</scope>
+    </dependency>
+
+		<dependency>
+	    <groupId>org.sakaiproject</groupId>
+	    <artifactId>sakai-user-api</artifactId>
+	    <scope>provided</scope>
+    </dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-tool-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-component-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-entity-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+    <dependency>
+			<groupId>servletapi</groupId>
+			<artifactId>servletapi</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+    <!-- *********************************************************** -->
+    <!--  Sakai dependencies to be bundled in WEB-INF/lib -->
+    <dependency>
+	    <groupId>org.sakaiproject</groupId>
+	    <artifactId>sakai-user-util</artifactId>
+    </dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-util</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-tool-util</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-tool-servlet</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-portal-util</artifactId>
+		</dependency>
+    <!-- *********************************************************** -->
+
+    <!-- ***************************************************** -->
+    <!-- Guanxi common dependencies to be bundled in WEB-INF/lib -->
+    <dependency>
+			<groupId>org.guanxi</groupId>
+			<artifactId>guanxi-beans</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.guanxi</groupId>
+			<artifactId>guanxi-common</artifactId>
+		</dependency>
+    <!-- ***************************************************** -->
+		
+    <!-- ***************************************************** -->
+		<!-- Guanxi Service Provider Engine dependencies to be bundled in WEB-INF/lib -->
+		<dependency>
+			<groupId>org.guanxi</groupId>
+			<artifactId>guanxi-sp-engine</artifactId>
+		</dependency>
+    <!-- ***************************************************** -->
+
+    <!-- ***************************************************** -->
+		<!-- Guanxi Service Provider Guard dependencies to be bundled in WEB-INF/lib -->
+		<dependency>
+			<groupId>org.guanxi</groupId>
+			<artifactId>guanxi-sp-guard</artifactId>
+		</dependency>
+    <!-- ***************************************************** -->
+
+    <!-- ***************************************************** -->
+		<!-- Guanxi Identity Provider dependencies to be bundled in WEB-INF/lib -->
+		<dependency>
+			<groupId>org.guanxi</groupId>
+			<artifactId>guanxi-idp</artifactId>
+		</dependency>
+    <!-- ***************************************************** -->
+
+    <!-- ***************************************************** -->
+		<!-- Guanxi WAYF dependencies to be bundled in WEB-INF/lib -->
+		<dependency>
+			<groupId>org.guanxi</groupId>
+			<artifactId>guanxi-wayf</artifactId>
+		</dependency>
+    <!-- ***************************************************** -->
+
+    <!-- ***************************************************** -->
+    <!-- Guanxi third party libraries to be bundled in WEB-INF/lib -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+    </dependency>
+
+<!--
+    <dependency>
+      <groupId>bouncycastle</groupId>
+      <artifactId>bcprov-jdk14</artifactId>
+    </dependency>
+
+    <dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>jsr173_1.0_api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache</groupId>
+			<artifactId>xalan</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xbean</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache</groupId>
+			<artifactId>xercesImpl</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache</groupId>
+			<artifactId>xml-apis</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache</groupId>
+			<artifactId>xmlsec</artifactId>
+		</dependency>
+
+    <dependency>
+      <groupId>com.novell</groupId>
+      <artifactId>novell-jldap-devel</artifactId>
+    </dependency>
+-->
+    <!--  ***************************************************** -->
+	</dependencies>
+	
+	<build>
+		<sourceDirectory>src/java</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>${basedir}/src/resources</directory>
+					<includes>
+						<include>**/*.properties</include>
+					</includes>
+			</resource>
+		</resources>
+	</build>
+
+</project>

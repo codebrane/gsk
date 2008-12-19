@@ -1,0 +1,37 @@
+Welcome to the Guanxi Shibb Kit!
+
+o Introduction
+o Installation
+o Resources
+o More information
+
+Introduction
+============
+The Guanxi Shibb Kit (GSK) is a one-stop Shibboleth shop for Sakai. The kit installs a new portal:
+/portal-shibb
+which contains a Shibboleth Identity Provider, Service Provider and WAYF. The kit is built using
+the Guanxi Shibboleth implementation, which is a pure Java Shibboleth system.
+You can use the kit to turn Sakai into either a Shibboleth Identity Provider (IdP) or a 
+Shibboleth Service provider (SP).
+
+Installation
+============
+Please refer to the main GSK site for building and installation instructions:
+http://www.guanxi.uhi.ac.uk/drguanxi/index.php/Sakai_Guanxi_Shibb_Kit
+
+Resources
+=========
+GSK documention
+http://www.guanxi.uhi.ac.uk/drguanxi/index.php/Sakai_Guanxi_Shibb_Kit
+
+Sakai
+http://sakaiproject.org/portal
+
+Guanxi
+http://www.guanxi.uhi.ac.uk/index.php/Guanxi
+http://codebrane.com/blog/?cat=2
+
+More information
+================
+Send comments and suggestions to:
+alistair@codebrane.com

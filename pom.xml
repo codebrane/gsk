@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+	<!--
+		mvn idea:idea -DjdkName=1.5.0_06
+	-->
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>master</artifactId>
+    <groupId>org.sakaiproject</groupId>
+    <version>M2</version>
+    <relativePath>${sakai.root}/master/pom.xml</relativePath>
+  </parent>
+  <name>Sakai GSK Project</name>
+  <groupId>gsk</groupId>
+  <artifactId>gsk-holder</artifactId>
+  <packaging>pom</packaging>
+
+  <mailingLists>
+    <mailingList>
+      <name>Guanxi Development List</name>
+      <subscribe>https://lists.sourceforge.net/lists/listinfo/guanxi-development</subscribe>
+      <unsubscribe>https://lists.sourceforge.net/lists/listinfo/guanxi-development</unsubscribe>
+      <post>guanxi-development@lists.sourceforge.net</post>
+      <archive>http://sourceforge.net/mailarchive/forum.php?forum_name=guanxi-development</archive>
+    </mailingList>
+  </mailingLists>
+
+  <licenses>
+    <license>
+      <name>MOZILLA PUBLIC LICENSE Version 1.1</name>
+      <url>http://www.mozilla.org/MPL/MPL-1.1.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:svn:https://source.sakaiproject.org/svn/sakai/</connection>
+    <developerConnection>scm:svn:https://source.sakaiproject.org/svn/sakai/</developerConnection>
+    <url>https://source.sakaiproject.org/svn/sakai/</url>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>source.uhi.ac.uk-repository</id>
+      <name>UHI Maven 2.x Repository</name>
+      <url>http://source.uhi.ac.uk/mvn</url>
+    </repository>
+
+    <repository>
+      <id>source.uhi.ac.uk-snapshot-repository</id>
+      <name>UHI Maven2 snapshot repository</name>
+      <url>http://source.uhi.ac.uk/snapshots</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <dependencyManagement>
+    <dependencies>
+			<dependency>
+				<groupId>org.guanxi</groupId>
+				<artifactId>sakai-guanxi-gskpod-api</artifactId>
+				<version>1.0</version>
+			</dependency>
+			
+			<dependency>
+	      <groupId>org.guanxi</groupId>
+	      <artifactId>sakai-guanxi-pod-manager-api</artifactId>
+	      <version>1.0</version>
+	    </dependency>
+	
+	    <dependency>
+	      <groupId>org.guanxi</groupId>
+	      <artifactId>sakai-guanxi-gskpod-impl</artifactId>
+	      <version>1.0</version>
+	    </dependency>
+	
+	    <dependency>
+	      <groupId>org.guanxi</groupId>
+	      <artifactId>sakai-guanxi-pod-manager-impl</artifactId>
+				<version>1.0</version>
+	    </dependency>
+	
+	    <dependency>
+	      <groupId>org.guanxi</groupId>
+	      <artifactId>sakai-guanxi-provider</artifactId>
+				<version>1.0</version>
+	    </dependency>
+	
+	    <dependency>
+	      <groupId>org.sakaiproject</groupId>
+	      <artifactId>sakai-federating-provider</artifactId>
+	      <version>${sakai.version}</version>
+	    </dependency>
+	
+			<!-- *********************************************************** -->
+	    <!-- Sakai dependencies -->
+	    <dependency>
+	      <groupId>org.sakaiproject</groupId>
+	      <artifactId>sakai-component</artifactId>
+	      <version>${sakai.version}</version>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>org.sakaiproject</groupId>
+	      <artifactId>sakai-tool-api</artifactId>
+	      <version>${sakai.version}</version>
+	    </dependency>
+	
+	    <dependency>
+	      <groupId>${sakai.spring.groupId}</groupId>
+	      <artifactId>${sakai.spring.artifactId}</artifactId>
+	      <version>${sakai.spring.version}</version>
+	    </dependency>
+	
+	    <dependency>
+		    <groupId>org.sakaiproject</groupId>
+		    <artifactId>sakai-authz-api</artifactId>
+		    <version>${sakai.version}</version>
+		  </dependency>
+		
+			<dependency>
+				<groupId>org.sakaiproject</groupId>
+				<artifactId>sakai-util-api</artifactId>
+				<version>${sakai.version}</version>
+			</dependency>
+			
+			<dependency>
+		    <groupId>org.sakaiproject</groupId>
+		    <artifactId>sakai-event-api</artifactId>
+		    <version>${sakai.version}</version>
+	    </dependency>
+	
+			<dependency>
+		    <groupId>org.sakaiproject</groupId>
+		    <artifactId>sakai-user-api</artifactId>
+		    <version>${sakai.version}</version>
+	    </dependency>
+	
+			<dependency>
+				<groupId>org.sakaiproject</groupId>
+				<artifactId>sakai-tool-api</artifactId>
+				<version>${sakai.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.sakaiproject</groupId>
+				<artifactId>sakai-component-api</artifactId>
+				<version>${sakai.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.sakaiproject</groupId>
+				<artifactId>sakai-entity-api</artifactId>
+				<version>${sakai.version}</version>
+			</dependency>
+			
+			<dependency>
+		    <groupId>org.sakaiproject</groupId>
+		    <artifactId>sakai-user-util</artifactId>
+		    <version>${sakai.version}</version>
+	    </dependency>
+	
+			<dependency>
+				<groupId>org.sakaiproject</groupId>
+				<artifactId>sakai-util</artifactId>
+				<version>${sakai.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.sakaiproject</groupId>
+				<artifactId>sakai-tool-util</artifactId>
+				<version>${sakai.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.sakaiproject</groupId>
+				<artifactId>sakai-tool-servlet</artifactId>
+				<version>${sakai.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.sakaiproject</groupId>
+				<artifactId>sakai-portal-util</artifactId>
+				<version>${sakai.version}</version>
+			</dependency>
+	    <!-- *********************************************************** -->
+	
+			<!-- *********************************************************** -->
+	    <!-- Guanxi dependencies -->
+	    <dependency>
+				<groupId>org.guanxi</groupId>
+				<artifactId>guanxi-beans</artifactId>
+				<version>1.4.0</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.guanxi</groupId>
+				<artifactId>guanxi-common</artifactId>
+				<version>2.0.1</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.guanxi</groupId>
+				<artifactId>guanxi-sp-engine</artifactId>
+				<version>2.0.1</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.guanxi</groupId>
+				<artifactId>guanxi-sp-guard</artifactId>
+				<version>2.0.1</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.guanxi</groupId>
+				<artifactId>guanxi-idp</artifactId>
+				<version>2.0.1</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.guanxi</groupId>
+				<artifactId>guanxi-wayf</artifactId>
+				<version>1.2.8</version>
+			</dependency>
+			<!-- *********************************************************** -->
+	
+	    <!-- *********************************************************** -->
+	    <!-- Third party dependencies -->
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>1.0.4</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>servletapi</groupId>
+				<artifactId>servletapi</artifactId>
+				<version>2.4</version>
+			</dependency>
+
+<!--	shared/lib		
+			<dependency>
+				<groupId>oro</groupId>
+				<artifactId>oro</artifactId>
+				<version>2.0.8</version>
+			</dependency>
+		-->
+			
+			<dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring</artifactId>
+        <version>2.5.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>2.5.0</version>
+      </dependency>
+			
+			
+			
+			
+			
+			<!--
+			<dependency>
+	      <groupId>bouncycastle</groupId>
+	      <artifactId>bcprov-jdk14</artifactId>
+	      <version>136</version>
+	    </dependency>
+
+	    <dependency>
+				<groupId>org.apache.xmlbeans</groupId>
+				<artifactId>jsr173_1.0_api</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.14</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache</groupId>
+				<artifactId>xalan</artifactId>
+				<version>2.7.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.xmlbeans</groupId>
+				<artifactId>xbean</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache</groupId>
+				<artifactId>xercesImpl</artifactId>
+				<version>2.9.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache</groupId>
+				<artifactId>xml-apis</artifactId>
+				<version>2.9.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache</groupId>
+				<artifactId>xmlsec</artifactId>
+				<version>1.4.0</version>
+			</dependency>
+
+	    <dependency>
+	      <groupId>com.novell</groupId>
+	      <artifactId>novell-jldap-devel</artifactId>
+	      <version>2006.09.28-1unix</version>
+	    </dependency>
+	-->
+			<!-- *********************************************************** -->
+	</dependencies>
+  </dependencyManagement>
+
+  <modules>
+    <module>gsk/gskpod-api</module>
+    <module>gsk/gskpod-impl</module>
+    <module>gsk/pod-manager-api</module>
+    <module>gsk/pod-manager-impl/impl</module>
+    <module>gsk/pod-manager-impl/pack</module>
+    <module>portal-shibb/shibb</module>
+    <module>providers/component</module>
+    <module>providers/guanxi-providers</module>
+  </modules>
+</project>

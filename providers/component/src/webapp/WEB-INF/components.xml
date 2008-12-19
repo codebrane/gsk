@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="org.sakaiproject.user.api.UserDirectoryProvider"
+        class="org.sakaiproject.provider.user.FilterUserDirectoryProvider"
+        init-method="init"
+        destroy-method="destroy"
+        singleton="true">
+    <property name="myProvider">
+      <ref bean="org.guanxi.sp.sakai.provider.user.GuanxiUserDirectoryProvider" />
+    </property>
+	</bean>
+
+	<bean id="org.guanxi.sp.sakai.provider.user.GuanxiUserDirectoryProvider"
+        class="org.guanxi.sp.sakai.provider.user.GuanxiUserDirectoryProvider"
+        init-method="init"
+        destroy-method="destroy"
+        singleton="true">
+  </bean>
+</beans>

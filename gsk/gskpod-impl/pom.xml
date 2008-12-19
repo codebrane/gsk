@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>gsk-holder</artifactId>
+    <groupId>gsk</groupId>
+    <version>M2</version>
+    <relativePath>../../../pom.xml</relativePath>
+  </parent>
+	<name>sakai-guanxi-gskpod-impl</name>
+	<groupId>org.guanxi</groupId>
+	<artifactId>sakai-guanxi-gskpod-impl</artifactId>
+	<version>1.0</version>
+	<organization>
+		<name>Alistair Young</name>
+		<url>http://www.weblogs.uhi.ac.uk/sm00ay/</url>
+	</organization>
+	<inceptionYear>2006</inceptionYear>
+
+  <packaging>jar</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.guanxi</groupId>
+			<artifactId>sakai-guanxi-gskpod-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+		</dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+  </build>
+</project>

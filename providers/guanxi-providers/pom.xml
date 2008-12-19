@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>gsk-holder</artifactId>
+    <groupId>gsk</groupId>
+    <version>M2</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+	<name>sakai-guanxi-provider</name>
+	<groupId>org.guanxi</groupId>
+	<artifactId>sakai-guanxi-provider</artifactId>
+	<version>1.0</version>
+	<organization>
+		<name>Alistair Young</name>
+		<url>http://www.weblogs.uhi.ac.uk/sm00ay/</url>
+	</organization>
+	<inceptionYear>2006</inceptionYear>
+
+  <packaging>jar</packaging>
+
+	<dependencies>
+    <dependency>
+      <groupId>org.guanxi</groupId>
+      <artifactId>sakai-guanxi-pod-manager-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.guanxi</groupId>
+      <artifactId>sakai-guanxi-gskpod-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+		</dependency>
+
+    <dependency>
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-component</artifactId>
+    </dependency>
+
+    <dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-authz-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-entity-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-user-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-util-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-util</artifactId>
+		</dependency>
+
+    <dependency>
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-tool-api</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+  </build>
+</project>

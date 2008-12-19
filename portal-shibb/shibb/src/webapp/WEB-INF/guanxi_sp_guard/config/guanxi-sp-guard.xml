@@ -1,0 +1,27 @@
+<Guard xmlns="urn:guanxi:sp">
+  <GuardInfo>
+    <HostName>localhost</HostName>
+    <ID>protectedapp-guard</ID>
+    <AttributePrefix>HTTP_</AttributePrefix>
+  </GuardInfo>
+
+  <Cookie>
+    <Domain/>
+    <Path>/</Path>
+    <Age units="transient" />
+    <Prefix>GUANXI_GUARD_SERVICE_PROVIDER_</Prefix>
+  </Cookie>
+
+  <EngineInfo>
+    <AuthConsumerURL>https://localhost:8493/portal-shibb/guanxi_sp/shibb/acs</AuthConsumerURL>
+    <WAYFLocationService>https://localhost:8493/portal-shibb/guanxi_sp/shibb/wayf-location</WAYFLocationService>
+    <Timeout>10</Timeout>
+  </EngineInfo>
+
+  <TrustStore>__GUARD_APP_ROOT__/WEB-INF/guanxi_sp_guard/truststore/guard.jks</TrustStore>
+  <TrustStorePassword>changeme</TrustStorePassword>
+
+  <Keystore>__GUARD_APP_ROOT__/WEB-INF/guanxi_sp_guard/keystore/guard.jks</Keystore>
+  <KeystorePassword>changeme</KeystorePassword>
+  <CertificateAlias>webservices</CertificateAlias>
+</Guard>
