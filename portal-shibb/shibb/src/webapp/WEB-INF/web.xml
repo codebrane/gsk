@@ -94,6 +94,13 @@
 	<!-- ******************************************************************************************* -->
   <!-- Servlets -->
 
+  <!-- Sakai shibb portal -->
+  <servlet>
+		<servlet-name>sakai.portal.shibb</servlet-name>
+		<servlet-class>org.guanxi.sp.sakai.portal.tool.GuanxiPortal</servlet-class>
+		<load-on-startup>4</load-on-startup>
+  </servlet>
+
   <!-- Guanxi Guard Session Verifier Service -->
   <servlet>
     <display-name>Guanxi Guard Session Verifier Service</display-name>
