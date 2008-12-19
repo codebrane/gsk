@@ -7,6 +7,9 @@
   <bean id="shibbolethAuthHandler" class="org.guanxi.idp.service.AuthHandler" init-method="init">
     <property name="errorPage"><value>/message.gxIdP</value></property>
     <property name="authenticator"><ref bean="flatFileAuthenticator" /></property>
+    <!--
+    <property name="authenticator"><ref bean="sakaiAuthenticator" /></property>
+    -->
     <property name="messageSource"><ref bean="messageSource"/></property>
     <property name="gxPrincipalFactory"><ref bean="shibbolethGuanxiPrincipalFactory" /></property>
     <property name="authFormAction"><value>/portal-shibb/guanxi_idp/shibb/sso</value></property>
