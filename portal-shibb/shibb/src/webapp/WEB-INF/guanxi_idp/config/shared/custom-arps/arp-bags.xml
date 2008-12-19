@@ -52,4 +52,11 @@
   <bag name="memberMapping">
   	<attribute name="memberOf" value="*" />
   </bag>
+
+  <bag name="sakai">
+  	<attribute name="eid" value="*" />
+		<attribute name="firstname" value="*" />
+		<attribute name="surname" value="*" />
+		<attribute name="email" value="*" />
+  </bag>
 </arp>
