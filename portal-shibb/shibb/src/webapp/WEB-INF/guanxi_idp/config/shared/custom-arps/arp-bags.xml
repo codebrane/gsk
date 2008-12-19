@@ -54,9 +54,15 @@
   </bag>
 
   <bag name="sakai">
-  	<attribute name="eid" value="*" />
+		<!-- Real Sakai attributes -->
+		<attribute name="eid" value="*" />
 		<attribute name="firstname" value="*" />
 		<attribute name="surname" value="*" />
 		<attribute name="email" value="*" />
+  	<!-- Attributes mapped to Sakai compatible ones -->
+  	<attribute name="sakaiUserID" value="*" />
+		<attribute name="sakaiFirstName" value="*" />
+		<attribute name="sakaiLastName" value="*" />
+		<attribute name="sakaiMail" value="*" />
   </bag>
 </arp>
