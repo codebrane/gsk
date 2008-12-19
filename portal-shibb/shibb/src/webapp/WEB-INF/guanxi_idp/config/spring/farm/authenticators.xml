@@ -19,4 +19,9 @@
     <property name="authenticatorConfig"><value>/WEB-INF/guanxi_idp/config/shared/ldap.xml</value></property>
   </bean>
   <!-- ***************************************************************************** -->
+
+  <!-- ***************************************************************************** -->
+  <!-- Sakai authenticator -->
+  <bean id="sakaiAuthenticator" class="org.guanxi.idp.authenticators.SakaiAuthenticator" init-method="init" />
+  <!-- ***************************************************************************** -->
 </beans>
