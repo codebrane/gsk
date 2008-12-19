@@ -10,6 +10,9 @@
     <property name="attributor">
       <list>
         <ref bean="flatFileAttributor" />
+        <!--
+        <ref bean="sakaiAttributor" />
+        -->
       </list>
     </property>
   </bean>
