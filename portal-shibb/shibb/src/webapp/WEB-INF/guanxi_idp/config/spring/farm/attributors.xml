@@ -34,4 +34,16 @@
   -->
   <!-- ***************************************************************************** -->
 
+  <!-- ***************************************************************************** -->
+  <!-- Sakai attributor -->
+  <bean id="sakaiAttributor" class="org.guanxi.idp.attributors.SakaiAttributor" init-method="init">
+    <property name="mapper"><ref bean="attributeMapper"/></property>
+    <property name="arpEngine"><ref bean="sakaiARPEngine"/></property>
+  </bean>
+
+  <bean id="sakaiARPEngine" class="org.guanxi.idp.util.ARPEngine" scope="prototype" init-method="init">
+    <property name="arpFile"><value>/WEB-INF/guanxi_idp/config/shared/arp.xml</value></property>
+  </bean>
+  <!-- ***************************************************************************** -->
+
 </beans>
