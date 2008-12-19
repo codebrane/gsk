@@ -11,6 +11,7 @@
   <provider name="protectedapp-guard">
     <allow>MappedFlatFileAttributesForProtectedApp</allow>
     <allow>ldap</allow>
+		<allow>sakai</allow>
   </provider>
 
   <provider name="*">
