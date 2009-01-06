@@ -1,7 +1,7 @@
 <Guard xmlns="urn:guanxi:sp">
   <GuardInfo>
     <HostName>localhost</HostName>
-    <ID>protectedapp-guard</ID>
+    <ID>sakai-guard</ID>
     <AttributePrefix>HTTP_</AttributePrefix>
   </GuardInfo>
 
