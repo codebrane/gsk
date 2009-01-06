@@ -31,11 +31,4 @@
        mappedName="${eduPersonScopedAffiliation}"
        mappedValue="${affiliation.staff}"
        scope="${scope.uni.ac.uk}"/>
-
-  <!-- Sakai maps -->
-	<map name="sakaiUserID-mapping" attrName="id" attrValue=".*" mappedName="sakaiUserID" />
-	<map name="sakaiFirstName-mapping" attrName="firstName" attrValue=".*" mappedName="sakaiFirstName" />
-	<map name="sakaiLastName-mapping" attrName="surname" attrValue=".*" mappedName="sakaiLastName" />
-	<map name="sakaiMail-mapping" attrName="email" attrValue=".*" mappedName="sakaiMail" />
-
 </AttributeMap>
