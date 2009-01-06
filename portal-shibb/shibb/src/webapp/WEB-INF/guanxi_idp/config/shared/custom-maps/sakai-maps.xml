@@ -1,0 +1,12 @@
+<!-- These attribute mappings are for the Sakai Guard -->
+<AttributeMap xmlns="urn:guanxi:idp">
+	<!-- Sakai maps.
+	     These rules turn native Sakai attributes to eduPerson ones. This means you can use
+	     Sakai as a Shibboleth IdP to gain access to a Shibboleth Service Provider that
+	     requires eduPerson attributes, without having to install the eduPerson schema in
+	     your Sakai user database. -->
+	<map name="sakaiUserID-mapping" attrName="id" attrValue=".*" mappedName="sakaiUserID" />
+	<map name="sakaiFirstName-mapping" attrName="firstName" attrValue=".*" mappedName="sakaiFirstName" />
+	<map name="sakaiLastName-mapping" attrName="surname" attrValue=".*" mappedName="sakaiLastName" />
+	<map name="sakaiMail-mapping" attrName="email" attrValue=".*" mappedName="sakaiMail" />
+</AttributeMap>
